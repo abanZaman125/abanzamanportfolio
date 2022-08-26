@@ -8,7 +8,7 @@ HTML
 Semi-Beginning:
 HTML and Basic CSS
 
-End-of-Semi-Begninng {
+End-of-Semi-Begninng
 HTML and Better CSS
 
 More to come!
