@@ -1,127 +1,123 @@
-<!DOCTYPE html> <!-- Render this file as HTML 5 -->
-
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8"> <!-- Information for basic website information, like the description, title, and character set. -->
-  <title>Aban Zaman - Personal Portfolio Website</title>
-  <meta name="description:" content="Hi, I'm Aban Zaman, and this is my personally coded website/portfolio (HTML now, but CSS and Javascript soon to be added)!
-    I'm an extroverted brown terrorist who supports all ideologies related to suicide-bombings. Currently in JMSS - Grade 9 - Insta: abanz69.">
-  <meta name="keywords" content="Aban,Zaman,John McCrae Secondary School,aban,zaman,JMSS,johnmccraess,bangladeshi,bengali,brown,abanz69">
-  <link href="css/styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Aban Zaman</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Link elements for fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--Base HTML element can target all links and can set their href, targets, and other attricbutes.-->
+  <base target="_blank">
 </head>
 
 <body>
-  <table cellpadding="20">
-    <tbody>
-      <tr>
-        <td><img src="images\boratTooCoolForSchool.png" alt="Naked selfie of Aban Zaman." height="300" width="250"></td>
-        <td>
-          <h1>Aban Zaman</h1>
-          <p>“Change might not be fast and it isn't always easy. But with time and effort, almost any habit can be reshaped.”
-            <br>― Charles Duhigg,<em> The Power of Habit: Why We Do What We Do in Life and Business</em>
-          </p>
-          <p><em>Student at <a href="https://johnmccraess.ocdsb.ca/" target="_blank">John McCrae Secondary School</a></em></p>
-          <p>I am an amazing and charasmatic brown 9th grader.
-            <strong><br>I do not support the <a href="https://en.wikipedia.org/wiki/Ku_Klux_Klan#Goals" target="_blank">KKK</a> *winky face* 😜.</strong>
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- Paragraph text does not go off page, but moves to the next line -->
+  <div class="intro-container">
+    <div class="intro-text-div">
+      <p class="hi-im-line">Hi, I'm</p>
+      <h1 id="website-title">Aban Zaman</h1>
+      <p class="description-text">An <span style="text-decoration: line-through">hardworking</span> impulsive, extroverted, Bengali 14 year old. Ninth-grader at John McCrae Secondary School.
+        Fluent English speaking, <em>mais seulment un peu de la Francais.</em>
+      </p>
+    </div>
+    <!-- Without the div, the flex layout of the intro-container made the image unnaturally bigger. -->
+    <div>
+      <img class="aban-img" src="images/abanTitle.png" alt="aban picture">
+    </div>
+  </div>
 
-  <hr>
+  <div class="passion-container">
+    <div class="passion-text-div">
+      <h2 class="passion-text-title">My Passion: Coding</h2>
+      <p class="passion-text-p">Hey, take a look at the earthlings. Goodbye! Must go faster... go, go, go, go, go! I gave it a cold? I gave it a virus.
+        A computer virus. They're using our own satellites against us. And the clock is ticking.
+        My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+      <a id="java-game-button" href="https://www.onlinegdb.com/ITbCFVzX8">Java Tic-Tac-Toe Game with UI!</a>
+    </div>
+    <img class="coding-image" src="images/codingImage.jpg" alt="man holding phone that says eat code sleep repeat">
+  </div>
 
-  <h3>Education</h3>
-  <ul>
-    <li>Mary Honeywell Elementary School (JK-6)</li>
-    <li>OCV Elementary (GR.7)
-      <ol start="69" type="i">
-        <li>It's online so it sucks.</li>
-        <li>If it has a lot of students it's probably because a new pandemic has occured.</li>
-        <li>No one socializes and the chance of getting a <a href="https://en.uncyclopedia.co/wiki/Girlfriend" target="_blank">girlfriend</a> online is <strong>low</strong>.</li>
-      </ol>
-    </li>
-    <li>Cedarview Middle School (GR. 8)</li>
-    <li><strong>Currently: </strong>John McCrae Secondary School (GR.9)</li>
-  </ul>
+  <div class="favorite-movies-container">
+    <h2 class="favorite-movies-title">My Top Three Favorite Movies</h2>
 
-  <hr>
+    <div class="movie-row-container">
 
-  <h3>Hobbies</h3>
-  <ol>
-    <li><a href="https://en.uncyclopedia.co/wiki/HowTo:Cook_Children" target="_blank">Eating children</a> (<em>I always cook them a tad too crunchy</em> 🥲).</li>
-    <li>Donating to female streamers.</li>
-    <li><em>Seduction of the females.</em></li>
-    <li>Coding, reading, reading <a href="https://en.uncyclopedia.co/wiki/Allah" target="_blank">Arabic</a>, and procrastination-filled French.</li>
-  </ol>
+      <div class="movie-number" style="top: -169px;right: 196px;">
+        <p>01</p>
+      </div>
+      <div class="movie-title-text">
+        <p>The Godfather (Part I and II)</p>
+      </div>
+      <div class="movie-image">
+        <img src="https://static.wikia.nocookie.net/godfather/images/a/aa/Michael_Corleone_Part_I.jpg/revision/latest?cb=20190828200514" alt="Michael_Corleone_Part_I_Image">
+      </div>
 
-  <hr>
+      <div class="movie-number" style="top: -5px; right: 348px;">
+        <p>02</p>
+      </div>
+      <div class="movie-title-text">
+        <p>Fight Club</p>
+      </div>
+      <div class="movie-image">
+        <img src="https://www.eyefilm.nl/uploads/images/production/_960x960_crop_center-center_none/still-Fight-Club-David-Fincher-US-DE-1999-2.jpg" alt="Fight_Club_Image">
+      </div>
 
-  <h3>Experiences</h3>
+      <div class="movie-number" style="top: 157px; right: 514px;">
+        <p>03</p>
+      </div>
+      <div class="movie-title-text">
+        <p>Good Will Hunting</p>
+      </div>
+      <div class="movie-image">
+        <img src="https://img.aktuality.sk/foto/OTYweDk2MC9zbWFydC9pbWc=/rs_rs_aktuality_2302361_b2876f99e314d7cf5547ca8628a9a6d4?st=wJ0G_jUq6J9UJ0vmfanym6_WhT2xHBO1tU-KgL5Kts0&ts=1660860000&e=0" alt="Good_Will_Hunting_Characters_On_Bench_Image">
+      </div>
 
-  <table cellpadding="15">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Experience</th>
-      </tr>
-    </thead>
+      <p class="movie-mentions-text">Honorable Mentions: <a class="favorite-movie-link" href="https://www.imdb.com/title/tt0086250/">Scarface</a> and <a class="favorite-movie-link" href="https://www.imdb.com/title/tt0253474/">The Pianist</a>.</p>
 
-    <tbody>
-      <tr>
-        <td>September 11th, 2001</td>
-        <td>One-day, impromptu flight course provided by the Al-Qaeda.</td>
-      </tr>
-      <tr>
-        <td>Middle of July, 2022</td>
-        <td><strong>I volunteered for a <em>women-lead</em> organization.<br><em>WHERE I FUCKING ORGANIZED CLOTHES EVEN THOUGH I AM A MASCULINE MAN.</em></strong></td>
-      </tr>
-      <tr>
-        <td>Friday, November 22, 1963</td>
-        <td><strong>sniped jfk that litle bitch 360 no=scoped that goofy no-good black-lovin un-american president</strong></td>
-      </tr>
-    </tbody>
-  </table>
+    </div>
 
-  <hr>
+  </div>
 
-  <h3>Skills</h3>
-  <table cellpadding="5">
-    <thead>
-      <tr>
-        <th>The Skill</th>
-        <th>Stars out of 5</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Aban's overall general skill and intelligence and worth to society</td>
-        <td>🌟🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>Shooting up schools</td>
-        <td>🌟🌟🌟🌟🌟</td>
-      </tr>
-      <tr>
-        <td>Suicide (<em>that shit kills you</em>)</td>
-        <td>🌟</td>
-      </tr>
-      <tr>
-        <td>2SLGBTQ+ Flag and Propaganda Burning</td>
-        <td>🌟🌟🌟🌟🌟</td>
-      </tr>
+  <div class="extra-info-container">
+    <div class="pirlo-div">
+      <img class="pirlo-image" src="https://thumbs.dreamstime.com/b/andrea-pirlo-match-milan--italy-march-san-siro---stadium-uefa-champions-league--ac-fc-arsenal-188502876.jpg" alt="Andrea Pirlo Picture">
+      <p class="pirlo-text">My<br>favorite<br>soccer<br>player.</p>
+    </div>
 
-    </tbody>
-  </table>
+    <div class="nationalities-div">
+      <img class="dhaka-img" src="https://upload.wikimedia.org/wikipedia/commons/3/31/Dhaka_Skyline.jpg" alt="Dhaka City Skyline">
+      <img class="ottawa-img" src="https://i.cbc.ca/1.6341949.1644201535!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/aerial-downtown-covid-19-protest-ottawa-truckers-truck-convoy.jpg" alt="Picture of Ottawa">
 
-  <hr>
+      <div class="aban-quote-div">
+        <p class="quotation-mark">&#8220;</p>
+        <p class="quote-text">Even though I have lived in Ottawa for my entire life, my Bengali culture has a huge influence on my life. And I'm happy because I'd rather be brown than a boring oatmeal white.</p>
+        <p class="aban-quote-citation">- Aban Zaman</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- The target attribute opens the href into a new tab.
-  The default is the link opening into the same tab (_self). -->
-  <p><a href="contact.html" target="_blank">Contact Me!</a> </p>
-
+  <div class="contact-me-container">
+    <div class="contact-text">
+      <p>Email:<br>
+        <a href="mailto:abanz0654@gmail.com">abanz0654@gmail.com</a>
+      </p>
+    </div>
+    <div class="contact-text middle-contact-text">
+      <p>Github:<br>
+        <a href="https://github.com/abanZaman125">abanZaman125</a>
+      </p>
+    </div>
+    <div class="contact-text">
+      <p>Instagram:<br>
+        <a href="https://www.instagram.com/abanz69/">abanz69</a>
+      </p>
+    </div>
+  </div>
 
 </body>
 
