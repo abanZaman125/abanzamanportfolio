@@ -1,29 +1,328 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  background-color: #2C3333;
+  background-color: black;
+  margin: 0;
+
+  /*Set html and body element height to 100% so
+  other elements set to 100% set to parent height. */
+  height: 100%;
+  width: 100%;
 }
 
-hr {
-  border-color: #C4DFAA;
-  border-style: dotted none none none;
-  width: 10%;
-  border-width: 7px;
-}
-
-h1{
+p{
   color: #E7F6F2;
-  font-family: monospace;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1px;
 }
 
-h3 {
-  color: #A5C9CA;
-  font-family: monospace;
+h2 {
+  font-family: 'Volkhov', serif;
+  font-size: 48px;
+  font-weight: normal;
+  color: #E7F6F2;
 }
 
-p, ol, ul, td, th{
-  color: #97b877;
-  font-family: monospace;
+.intro-container {
+  width: 940px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
 }
 
-a {
-  color: CornSilk;
+.hi-im-line {
+  background-color: #5f99ff;
+  padding-left: 8px;
+}
+
+.aban-img {
+  position: relative;
+  right: 120px;
+  top: -31.5px;
+  transform: rotate(196deg);
+  width: 228px;
+}
+
+#website-title {
+  font-family: 'Volkhov', serif;
+  font-size: 9em;
+  font-weight: 100;
+  color: #E7F6F2;
+  margin: 0;
+}
+
+.description-text {
+  padding-right: 6.25em;
+}
+
+/*--------------------------------------- S E C T I O N ----------------------------------------------------------------------------------*/
+
+.passion-container {
+  display: flex;
+  margin-bottom: 180px;
+}
+
+.passion-text-div {
+  /*Padding at the bottom is useless.*/
+  padding: 32px 32px 0 32px;
+  background: linear-gradient(to right, red, purple);
+  border-radius: 50px;
+
+  max-width: 710px;
+
+  position: relative;
+  left: 70px;
+}
+
+.passion-text-title {
+  margin-top: 0;
+}
+
+.passion-text-p {
+  padding-right: 20px;
+}
+
+#java-game-button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+
+  position: absolute;
+  bottom: 131px;
+}
+
+#java-game-button:hover {
+  filter: brightness(120%);
+}
+
+.coding-image {
+  width: 700px;
+  background: linear-gradient(to right, red, purple);
+  padding: 3px;
+  border-radius: 87px;
+
+  /*Positioning, z-index is the image stacking.*/
+  position: relative;
+  z-index: -1;
+  top: 57px;
+  right: 104px;
+}
+
+/*--------------------------------------- S E C T I O N ----------------------------------------------------------------------------------*/
+
+.favorite-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 72px 0;
+  /*background-image: url(https://i.pinimg.com/originals/2f/fd/c8/2ffdc8e052da1d1d4242382b86761e78.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+
+.favorite-movies-title {
+  font-size: 72px;
+  max-width: 780px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.movie-row-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto; /*No third/first column because the numbers are absolutely positioned.*/
+  grid-template-rows: 1fr 1fr 1fr auto; /*fourth row is for text which will span the entire three columns*/
+  grid-row-gap: 20px;
+
+  width: 100%;
+}
+
+.movie-number {
+  position: absolute;
+}
+
+.movie-number p {
+  z-index: 0;
+  opacity: 0.1;
+
+  margin: 0;
+  color: gray;
+  font-size: 325px;
+}
+
+.movie-title-text {
+  display: flex;
+  align-items: center; /*vertical centering*/
+}
+
+.movie-title-text p{
+  position: relative;
+  z-index: 5;
+
+  margin: 0;
+  padding-left: 10px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.movie-image img{
+  position: relative;
+  z-index: 5;
+
+  border-radius: 50%;
+  width: 135px;
+}
+
+.movie-mentions-text {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 0;
+}
+
+.favorite-movie-link {
+  position: relative;
+  z-index: 5;
+  text-decoration: none;
+  color: #540991;
+}
+
+/*--------------------------------------- S E C T I O N ----------------------------------------------------------------------------------*/
+
+.extra-info-container {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 692px 786px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 105px;
+}
+
+.pirlo-image {
+  border-radius: 20px;
+  max-width: calc(0.6 * 598px);
+  max-height: calc(0.6 * 900px);
+}
+
+.pirlo-div {
+  position: relative;
+  display: flex;
+  padding-left: 30px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.pirlo-text {
+  position: relative;
+  top: 6px;
+  right: -25px;
+
+  align-self: baseline;
+  margin: 0;
+  line-height: 100%;
+  font-weight: bold;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.nationalities-div {
+  height: fit-content;
+  position: relative;
+  max-width: 805.62px;
+  padding-right: 20px;
+}
+
+.dhaka-img {
+  position: relative;
+  z-index: 0;
+
+  width: 100%;
+  border-radius: 30px;
+}
+
+.ottawa-img {
+  position: absolute;
+  left: 192px;
+  height: 324px;
+  border-radius: 0 30px 30px 0;
+  clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 20% 100%);
+}
+
+/*------------------------ SUB-SECTION ------------------------------------------------*/
+
+.aban-quote-div {
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 1px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.quotation-mark {
+  margin: 0;
+  font-size: 300px;
+  height: 82px;
+  line-height: 0.78;
+  text-indent: 0;
+
+  position: absolute;
+  top: -45px;
+  left: -29px;
+  opacity: 0.9;
+}
+
+.quote-text {
+  text-indent: 3.5em;
+  line-height: 2;
+  padding: 16px 22px 10px;
+}
+
+.aban-quote-citation {
+  text-align: center;
+}
+
+/*--------------------------------------- S E C T I O N ----------------------------------------------------------------------------------*/
+
+.contact-me-container {
+  width: 100%;
+  height: 10em;
+  background-color: white;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  margin-top: 130px;
+}
+
+.contact-text {
+  margin: auto;
+}
+
+.contact-text p {
+  color: #a6a6a6;
+  font-size: 1em; /*16px*/
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.contact-text.middle-contact-text {
+  margin-left: 7.5em;
+}
+
+/*Higher specificity than .contact-text p, so anchor elements are not gray :D*/
+.contact-text p a {
+  text-decoration: none;  /*No default link-underline.*/
+  color: gray;
+  font-weight: normal;
+}
+
+.contact-text p a:hover {
+  color: black;
 }
