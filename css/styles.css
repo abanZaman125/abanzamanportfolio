@@ -97,8 +97,8 @@ h2 {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
 
-  position: absolute;
-  bottom: 131px;
+  position: relative;
+  bottom: -7px;
 }
 
 #java-game-button:hover {
